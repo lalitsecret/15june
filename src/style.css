@@ -1,0 +1,280 @@
+body
+{
+	background: silver;
+	margin:0;
+	font-family: verdana;
+}
+input,button,a
+{
+	padding: 10px;
+	border:0;
+	text-decoration: none;
+	outline:0;
+	box-sizing: border-box;
+}
+header
+{
+	line-height: 10vh;
+	background: black;
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-transform: capitalize;
+}
+header a
+{
+	color:silver;
+}
+header a:hover
+{
+	color:white;
+}
+header div:last-child a
+{
+	color:white;
+	padding: 10px 40px;
+	background: red;
+	border-radius: 100px;
+}
+header div:first-child
+{
+	font-size: 120%;
+	letter-spacing: 2px;
+}
+
+.container
+{
+	height: 80vh;
+	overflow: auto;
+	padding:0 2%;
+}
+
+footer
+{
+	line-height: 10vh;
+	background: black;
+	color:white;
+	text-align: center;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+	background: red;
+}
+.login
+{
+	background: white;
+	display: inline-table;
+	padding: 2%;
+	margin:2%;
+	border-radius: 10px;
+	box-shadow:0 0 10px black;
+}
+
+
+.login button
+{
+	width: 100%;
+	background: black;
+	color:white;
+	margin-bottom: 4px;
+}
+.login input
+{
+	border-bottom: 1px solid #000;
+	width:100%;
+}
+.login .form-flex
+{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.home
+{
+	padding: 5%;
+	display: flex;
+	flex-flow: wrap;
+}
+.home .item
+{
+	padding: 10px;
+	margin:10px;
+	border-radius: 20px;
+	background: white;
+	width: 21%;
+	box-shadow:0 0 10px black;
+}
+.home .item a
+{
+	padding: 5px 10px;
+	background: black;
+	color:white;
+	border-radius: 100px;
+}
+
+
+.container form input
+{
+	margin:4px;
+}
+.container form button
+{
+	background: black;
+	color:white;
+}
+
+table
+{
+	width: 100%;
+	background: white;
+	text-align: center;
+}
+table th,
+table td
+{
+	padding: 10px;
+}
+table thead
+{
+	background: black;
+	color:white;
+	position: sticky;
+	top:0;
+}
+table tbody tr td:last-child button:first-child
+{
+	background: orange;
+	color:white;
+	padding: 5px;
+	margin:2.5px;
+}
+table tbody tr td:last-child button:last-child
+{
+	margin:2.5px;
+	color:white;
+	padding: 5px;
+	background: red;
+}
+
+.toaster
+{
+	position: fixed;
+	bottom:10vh;
+	left:0%;
+	transition: 0.3s;
+	transform: translateX(-100%);
+	opacity: 0;
+	background: red;
+	color:white;
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow:0 0 10px black;
+}
+
+.toaster.active
+{
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+
+.batch
+{
+	display: flex;
+}
+.batch .item1
+{
+	width: 12%;
+	padding: 0.5%;
+
+}
+.batch .item2
+{
+	width: 60%;
+	padding: 0.5%;
+}
+.batch h5
+{
+	display: inline-table;
+	margin-right: 10px;
+	background: white;
+	border-left: 4px solid #000;
+	padding: 10px;
+	margin:0;
+}
+.batch .scroll
+{
+	height: 60vh;
+	overflow: auto;
+	padding-right: 5px;
+}
+.batch p
+{
+	padding: 5px;
+	border:1px dashed black;
+	background: white;
+	margin-bottom: 4px;
+	opacity: 0.4;
+	cursor: move;
+}
+.batch p.active
+{
+	opacity: 1;
+}
+
+.cal
+{
+	display: flex;
+	flex-flow: wrap;
+	padding: 2%;
+}
+.cal .item
+{
+	width: calc(72%/7);
+	padding: 2%;
+	background: white;
+	height: 40px;
+}
+
+.cal .item.active
+{
+	background: #333;
+	color:white;
+}
+
+.popup
+{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	transform: scale(0);
+	transition: 0.5s;
+}
+.popup.active
+{
+	transform: scale(1);
+}
+.popup .inner
+{
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	background: white;
+	padding: 20px;
+}
+.popup .inner .close
+{
+	position: absolute;
+	top:0;
+	right: 0;
+	padding: 10px;
+	background: red;
+	color:white;
+}
